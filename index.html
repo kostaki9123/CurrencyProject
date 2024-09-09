@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>      
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">    
+    <title>Currency converter</title>
+</head>
+<body>
+    <div class="container" >
+        <div class="currency-converter">
+            <h1>Currency Converter</h1>
+            
+            <form>
+               <p><i class="arrow down arrow2"></i></p>
+               <p><i class="arrow down arrow1"></i></p>
+               <div class="input-container">
+                  <input class="input1" type="text" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1').replace(/^0[^.]/, '0');" >   
+                  <span>&#8594;</span>
+                  <input class="input2" type="text" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1').replace(/^0[^.]/, '0');">
+                  
+                  
+                  <div class="dropdown-button dropdown-button-1">EUR </div>
+                  <div class="dropdown-content dropdown-content-1">
+                      <a href="#" class="dropdownitem1" >EUR</a>
+                      <a href="#" class="dropdownitem1" >USD</a>
+                      <a href="#" class="dropdownitem1" >GBP</a>
+                      <a href="#" class="dropdownitem1" >AUD</a>
+                      <a href="#" class="dropdownitem1" >CAD</a>       
+                      <a href="#" class="dropdownitem1" >JPY</a>       
+                      <a href="#" class="dropdownitem1" >CNY</a>       
+                  </div>
+                  
+                
+                  <div class="dropdown-button dropdown-button-2">USD</div>
+                  <div class="dropdown-content dropdown-content-2">
+                      <a href="#" class="dropdownitem2" >EUR</a>
+                      <a href="#" class="dropdownitem2" >USD</a>
+                      <a href="#" class="dropdownitem2" >GBP</a>
+                      <a href="#" class="dropdownitem2" >AUD</a>
+                      <a href="#" class="dropdownitem2" >CAD</a>
+                      <a href="#" class="dropdownitem2" >JPY</a>
+                      <a href="#" class="dropdownitem2" >CNY</a>
+                  </div>
+                  
+               </div>
+               <button>Result</button>
+            </form>
+
+        </div>
+        
+    </div>
+    <script type="module" src="script.js"></script>
+</body>
+</html>
